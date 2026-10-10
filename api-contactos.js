@@ -13,7 +13,7 @@ export default {
 
       const registroFinal = {
         matricula: matricula, nombre_oficial: validacion.nombre,
-        fecha: new Date().toLocaleString("es-MX", { timeZone: "Corea" })
+        fecha: new Date().toLocaleString("es-MX", { timeZone: "Mexico" })
       };
       await env.CONTACTOS.put(matricula, JSON.stringify(registroFinal));
       
